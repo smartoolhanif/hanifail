@@ -103,7 +103,7 @@ export function Statistics() {
                     fill="#8884d8"
                     dataKey="value"
                   >
-                    {guildData.map((entry, index) => (
+                    {guildData.map((_, index) => (
                       <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                     ))}
                   </Pie>
